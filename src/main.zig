@@ -80,11 +80,7 @@ pub fn main() !void {
 
         try listContents(&out, working_path);
 
-        try out.writeAll("\na Add | ");
-        try out.writeAll("d Delete | ");
-        try out.writeAll("r Rename | ");
-        try out.writeAll("c Change dir | ");
-        try out.writeAll("q Quit | \n");
+        try out.writeAll("\na Add | d Delete | r Rename | c Change dir | q Quit |\n");
         try out.writeAll(": ");
 
         try stdin_reader.interface.discardAll(1);
