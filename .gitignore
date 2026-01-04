@@ -1,1 +1,4 @@
 zig-out/
+test_fold/
+.zig-cache/
+
